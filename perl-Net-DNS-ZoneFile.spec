@@ -6,7 +6,7 @@
 %define	pdir	Net
 %define	pnam	DNS-ZoneFile
 Summary:	Net::DNS::ZoneFile - convert a zone file to a collection of RRs
-#Summary(pl):	
+Summary(pl):	Net::DNS::ZoneFile - konwersja pliku stref do zbioru rekordów RR
 Name:		perl-Net-DNS-ZoneFile
 Version:	1.04
 Release:	1
@@ -29,8 +29,11 @@ Net::DNS::RR objects containing each of the RRs given in the zone in
 the case that the whole zone file was succesfully parsed. Otherwise,
 undef is returned.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ analizuje plik strefy i zwraca referencjê do tablicy
+obiektów Net::DNS::RR zawieraj±cych wszystkie RR podane w strefie - w
+przypadku, kiedy ca³y plik strefy zosta³ pomy¶lnie przetworzony. W
+przeciwnym wypadku zwracany jest undef.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
