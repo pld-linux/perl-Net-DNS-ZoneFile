@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	pdir	Net
 %define	pnam	DNS-ZoneFile
+%include	/usr/lib/rpm/macros.perl
 Summary:	Net::DNS::ZoneFile - convert a zone file to a collection of RRs
 Summary(pl.UTF-8):	Net::DNS::ZoneFile - konwersja pliku stref do zbioru rekordów RR
 Name:		perl-Net-DNS-ZoneFile
@@ -14,6 +14,7 @@ License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4fe0b670b00bc725ead2e7e13ccf89c2
+URL:		http://search.cpan.org/dist/Net-DNS-ZoneFile/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
