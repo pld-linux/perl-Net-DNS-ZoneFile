@@ -4,7 +4,6 @@
 
 %define	pdir	Net
 %define	pnam	DNS-ZoneFile
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::DNS::ZoneFile - convert a zone file to a collection of RRs
 Summary(pl.UTF-8):	Net::DNS::ZoneFile - konwersja pliku stref do zbioru rekordów RR
 Name:		perl-Net-DNS-ZoneFile
